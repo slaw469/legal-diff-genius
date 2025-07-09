@@ -1,11 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import { DocumentComparison } from '@/components/DocumentComparison';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+      <div className="container mx-auto p-6">
+        <header className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-slate-800 mb-2">
+            Smart Contract Comparison Tool
+          </h1>
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+            Advanced AI-powered contract analysis with differential highlighting, risk assessment, 
+            and plain-English explanations for legal professionals
+          </p>
+        </header>
+        <DocumentComparison />
       </div>
     </div>
   );
